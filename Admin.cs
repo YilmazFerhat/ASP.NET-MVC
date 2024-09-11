@@ -1,5 +1,12 @@
-public ActionResult Admin()
+public class AdminController : Controller
 {
-    var insurees = db.Insurees.ToList();
-    return View(insurees);
+    private ApplicationDbContext db = new ApplicationDbContext();
+
+    // GET: Admin
+    public ActionResult Index()
+    {
+        var insurees = db.Insurees.ToList();
+        return View(insurees);
+    }
 }
+
