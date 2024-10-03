@@ -9,4 +9,3 @@ public class AdminController : Controller
         return View(insurees);
     }
 }
-

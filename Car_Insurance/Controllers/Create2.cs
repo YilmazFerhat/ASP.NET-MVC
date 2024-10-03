@@ -1,4 +1,3 @@
-
 public class InsureeController : Controller
 {
     private ApplicationDbContext db = new ApplicationDbContext();
@@ -25,4 +24,3 @@ public class InsureeController : Controller
         return View(insuree);
     }
 }
-
